@@ -43,8 +43,10 @@ $(()=>{
         {
             _CalculatorHandler.solveEquation();
         }
-        else if(ev.charCode == 8)
+
+        if(ev.which == 8)
         {
+            console.log("fasdf");
             _CalculatorHandler.keyList.length = 0;
             _CalculatorHandler.display();
         }
@@ -56,5 +58,17 @@ $(()=>{
         _CalculatorHandler.evaluateKey(key.toString());
         
     });
+
+
+    /**
+     * Prevent backspace from deleting single characters, instead clears the whole thing.
+     */
+    $(document).on("keydown", function (event) {
+        if (event.which === 8 && $(event.target).is("input, textarea")) {
+            event.preventDefault();
+            _CalculatorHandler.keyList.length = 0;
+            _CalculatorHandler.display();
+        }
+      });
 
 });

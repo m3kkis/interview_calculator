@@ -99,6 +99,10 @@ class CalculatorHandler
      * This helped build the logic behind the priorities of operation with the paranthesis
      */
     solveEquation() {
+
+        if(this.inputBox.val() == "") return;
+
+
         var arrValues = [];
         var arrOperators = [];
         var count = 0;
@@ -157,9 +161,8 @@ class CalculatorHandler
             arrValues.push(this.implementOperator(op, [arrValues.pop(), arrValues.pop()]));
         }
 
-        
-        
-        result = +arrValues[0].toFixed(6);
+
+        result = arrValues[0]
         this.keyList.length = 0;
         this.inputBox.val( result.toString() );
       }
