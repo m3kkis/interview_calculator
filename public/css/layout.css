@@ -1,0 +1,38 @@
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+  
+body {
+    margin: 0;
+    background: #BBD2C5;
+    background: -webkit-linear-gradient(to left, #536976, #BBD2C5);
+    background: linear-gradient(to left, #536976, #BBD2C5);
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+hr {
+    height: 1px;
+    background-color: #4b4b4b;
+    border: none;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box; 
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

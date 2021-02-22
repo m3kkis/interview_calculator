@@ -1,0 +1,164 @@
+/* CALCULATOR BODY */
+
+.calculator{
+    position: relative;
+    width: 300px;
+    background-color: #292929;
+    border-radius: 10px;
+
+    margin-top: 15%;
+    -webkit-box-shadow: 5px 5px 9px 1px rgba(0,0,0,0.37); 
+    box-shadow: 5px 5px 9px 1px rgba(0,0,0,0.5);
+}
+
+.calc-container{
+    position: relative;
+    width: 95%;
+    height: 95%;
+    border-radius: 10px;
+    margin: 2.5%;
+}
+
+
+
+
+/* CALCULATOR DISPLAY */
+.calc-display{
+
+}
+
+.calc-input{
+    width: 100%;
+    outline: none;
+    resize: none;
+    background-color: #1c1c1c;
+    color: white;
+    font-size: 20px;
+    text-align: end;
+    box-sizing: border-box;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+.calc-input::-webkit-scrollbar {
+    width: 12px;
+}
+
+.calc-input::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+}
+
+.calc-input::-webkit-scrollbar-thumb {
+    background: rgba(65, 65, 65, 0.8); 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+
+.calc-input::-webkit-scrollbar-thumb:window-inactive {
+    background: rgba(65, 65, 65, 0.4); 
+}
+
+
+.calc-result > div{
+    padding: 10px;
+}
+
+
+/* KEYPAD */
+
+.calc-keypad{
+
+}
+
+.key-row{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.key{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background-color: #363636;
+    border: 2px solid #4b4b4b;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+}
+
+.key:hover{
+    background-color: #4b4b4b;
+    transition: 0.2s;
+}
+
+
+
+
+/* SPECIAL KEYS */
+.special{
+    color: #3aa13c;
+}
+
+.special-red{
+    color: #bd3333;
+}
+
+.special-green-fill{
+    background-color: #3aa13c;
+    color: white;
+}
+
+.special-green-fill:hover{
+    background-color: #51db53;
+}
+
+
+
+
+
+/* MEDIA Screen sizes */
+
+@media (min-width: 400px) {
+    .calculator{
+        margin-top: 5%;
+    }
+}
+
+
+@media (min-width: 550px) {
+    .calculator{
+        margin-top: 10%;
+    }
+}
+
+
+@media (min-width: 750px) {
+    .calculator{
+        margin-top: 15%;
+    }
+}
+
+
+@media (min-width: 1000px) {
+    .calculator{
+        margin-top: 15%;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .calculator{
+        margin-top: 15%;
+    }
+}
