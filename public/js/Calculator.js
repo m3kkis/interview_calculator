@@ -44,13 +44,6 @@ $(()=>{
             _CalculatorHandler.solveEquation();
         }
 
-        if(ev.which == 8)
-        {
-            console.log("fasdf");
-            _CalculatorHandler.keyList.length = 0;
-            _CalculatorHandler.display();
-        }
-        
         if (!rgx.test(key)) {
             return false;
         }
