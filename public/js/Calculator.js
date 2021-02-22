@@ -56,9 +56,9 @@ $(()=>{
     /**
      * Prevent backspace from deleting single characters, instead clears the whole thing.
      */
-    $(document).on("keydown", function (event) {
-        if (event.which === 8 && $(event.target).is("input, textarea")) {
-            event.preventDefault();
+    $(document).on("keydown", (ev) => {
+        if (ev.which === 8 && $(ev.target).is("input, textarea")) {
+            ev.preventDefault();
             _CalculatorHandler.keyList.length = 0;
             _CalculatorHandler.display();
         }
